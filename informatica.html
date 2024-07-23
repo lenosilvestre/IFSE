@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo IFS 2024</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+</head>
+
+<body>
+    <div id="progressbar">
+        <div id="progress">
+            <div id="progress-text">0%</div>
+        </div>
+    </div>
+
+    <ul>
+        <li class="btinicio">
+            <img src="img/casa.png" alt="início" width="30" height="30">
+            <h3><a href="index.html"> Início </a></h3>
+        </li>
+    </ul>
+
+
+    <h1>Conteúdos Específicos de Informática</h1>
+    <br>
+    <h2>Redes de Computadores</h2>
+    <ul>
+        <li><input type="checkbox" id="rcCheckbox1" onclick="updateProgressBar('rcCheckbox1')"> Conceitos de redes
+            locais.</li>
+        <li><input type="checkbox" id="rcCheckbox2" onclick="updateProgressBar('rcCheckbox2')"> Redes Ethernet.</li>
+        <li><input type="checkbox" id="rcCheckbox3" onclick="updateProgressBar('rcCheckbox3')"> Pilha de protocolos
+            TCP/IP.</li>
+        <li><input type="checkbox" id="rcCheckbox4" onclick="updateProgressBar('rcCheckbox4')"> Modelo de Referência
+            OSI.</li>
+        <li><input type="checkbox" id="rcCheckbox5" onclick="updateProgressBar('rcCheckbox5')"> Redes de longa distância
+            e suas tecnologias - WAN.</li>
+        <li><input type="checkbox" id="rcCheckbox6" onclick="updateProgressBar('rcCheckbox6')"> Redes Sem-Fio: PAN, WLAN
+            (IEEE 802.11) e WMAN.</li>
+        <li><input type="checkbox" id="rcCheckbox7" onclick="updateProgressBar('rcCheckbox7')"> Sistemas operacionais
+            para redes.</li>
+        <li><input type="checkbox" id="rcCheckbox8" onclick="updateProgressBar('rcCheckbox8')"> Instalação e
+            configuração de sistemas operacionais Windows, Windows Server e Linux.</li>
+        <li><input type="checkbox" id="rcCheckbox9" onclick="updateProgressBar('rcCheckbox9')"> Configuração de redes.
+        </li>
+        <li><input type="checkbox" id="rcCheckbox10" onclick="updateProgressBar('rcCheckbox10')"> Configuração de
+            roteadores.</li>
+        <li><input type="checkbox" id="rcCheckbox11" onclick="updateProgressBar('rcCheckbox11')"> Cabeamento
+            estruturado.</li>
+        <li><input type="checkbox" id="rcCheckbox12" onclick="updateProgressBar('rcCheckbox12')"> Gerência de redes.
+        </li>
+    </ul>
+
+    <h2>Arquitetura de Computadores</h2>
+    <ul>
+        <li><input type="checkbox" id="acCheckbox1" onclick="updateProgressBar('acCheckbox1')"> Barramentos: ISA, IDE,
+            ATA, SATA, SCSI e USB.</li>
+        <li><input type="checkbox" id="acCheckbox2" onclick="updateProgressBar('acCheckbox2')"> Memórias RAM, ROM e
+            CMOS.</li>
+        <li><input type="checkbox" id="acCheckbox3" onclick="updateProgressBar('acCheckbox3')"> BIOS e sequência de
+            inicialização do computador.</li>
+        <li><input type="checkbox" id="acCheckbox4" onclick="updateProgressBar('acCheckbox4')"> Periféricos de entrada e
+            saída.</li>
+        <li><input type="checkbox" id="acCheckbox5" onclick="updateProgressBar('acCheckbox5')"> Tipos de memória.</li>
+        <li><input type="checkbox" id="acCheckbox6" onclick="updateProgressBar('acCheckbox6')"> Dispositivos de memória
+            auxiliar.</li>
+        <li><input type="checkbox" id="acCheckbox7" onclick="updateProgressBar('acCheckbox7')"> Tipos de processador e
+            arquitetura interna.</li>
+        <li><input type="checkbox" id="acCheckbox8" onclick="updateProgressBar('acCheckbox8')"> Multiprocessadores e
+            Multicomputadores.</li>
+        <li><input type="checkbox" id="acCheckbox9" onclick="updateProgressBar('acCheckbox9')"> Pipeline.</li>
+        <li><input type="checkbox" id="acCheckbox10" onclick="updateProgressBar('acCheckbox10')"> RAID: características
+            e tipos.</li>
+    </ul>
+    <h2>Lógica de Programação</h2>
+    <ul>
+        <li><input type="checkbox" id="lpCheckbox1" onclick="updateProgressBar('lpCheckbox1')"> Algoritmos.</li>
+        <li><input type="checkbox" id="lpCheckbox2" onclick="updateProgressBar('lpCheckbox2')"> Fluxogramas.</li>
+        <li><input type="checkbox" id="lpCheckbox3" onclick="updateProgressBar('lpCheckbox3')"> Estruturas condicionais
+            e de repetição.</li>
+        <li><input type="checkbox" id="lpCheckbox4" onclick="updateProgressBar('lpCheckbox4')"> Tipos de dados.</li>
+        <li><input type="checkbox" id="lpCheckbox5" onclick="updateProgressBar('lpCheckbox5')"> Estruturas de dados:
+            pilha, fila, listas e árvores.</li>
+        <li><input type="checkbox" id="lpCheckbox6" onclick="updateProgressBar('lpCheckbox6')"> Ordenação e
+            Classificação de dados.</li>
+        <li><input type="checkbox" id="lpCheckbox7" onclick="updateProgressBar('lpCheckbox7')"> Complexidade de
+            algoritmos.</li>
+    </ul>
+
+    <h2>Programação de Computadores</h2>
+    <ul>
+        <li><input type="checkbox" id="pcCheckbox1" onclick="updateProgressBar('pcCheckbox1')"> Paradigmas de
+            programação.</li>
+        <li><input type="checkbox" id="pcCheckbox2" onclick="updateProgressBar('pcCheckbox2')"> Programação orientada a
+            objetos.</li>
+        <li><input type="checkbox" id="pcCheckbox3" onclick="updateProgressBar('pcCheckbox3')"> Programação para
+            dispositivos móveis: Android, iOS</li>
+        <li><input type="checkbox" id="pcCheckbox4" onclick="updateProgressBar('pcCheckbox4')"> Programação para IoT.
+        </li>
+        <li> <b>Linguagens e ambientes
+                de desenvolvimento:</b></li>
+        <li><input type="checkbox" id="pcCheckbox05" onclick="updateProgressBar('pcCheckbox05')">
+            Java</li>
+        <li><input type="checkbox" id="pcCheckbox0005" onclick="updateProgressBar('pcCheckbox05')">
+            Python</li>
+        <li><input type="checkbox" id="pcCheckbox005" onclick="updateProgressBar('pcCheckbox05')">
+            PHP</li>
+
+        <li><input type="checkbox" id="pcCheckbox6" onclick="updateProgressBar('pcCheckbox6')">
+            Desenvolvimento web: HTML, CSS3, jQuery, Web Services REST, JavaScript, React.
+        </li>
+        <li><input type="checkbox" id="pcCheckbox7" onclick="updateProgressBar('pcCheckbox7')">
+            Spring Framework (Spring Boot, Spring MVC,
+            Spring Data JPA) </li>
+    </ul>
+
+    <h2>Engenharia de Software</h2>
+    <ul>
+        <li><input type="checkbox" id="esCheckbox1" onclick="updateProgressBar('esCheckbox1')"> Processos de
+            desenvolvimento de software.</li>
+        <li><input type="checkbox" id="esCheckbox2" onclick="updateProgressBar('esCheckbox2')"> Modelagem de Software.
+        </li>
+        <li><input type="checkbox" id="esCheckbox3" onclick="updateProgressBar('esCheckbox3')"> Linguagem de modelagem
+            unificada (UML).</li>
+        <li><input type="checkbox" id="esCheckbox4" onclick="updateProgressBar('esCheckbox4')"> Qualidade de Software.
+        </li>
+        <li><input type="checkbox" id="esCheckbox5" onclick="updateProgressBar('esCheckbox5')"> Testes de Software.</li>
+        <li><input type="checkbox" id="esCheckbox6" onclick="updateProgressBar('esCheckbox6')"> Gestão de Projetos.</li>
+        <li><input type="checkbox" id="esCheckbox7" onclick="updateProgressBar('esCheckbox7')"> Governança de TI.</li>
+    </ul>
+
+    <h2>Sistemas Operacionais</h2>
+    <ul>
+        <li><input type="checkbox" id="soCheckbox1" onclick="updateProgressBar('soCheckbox1')"> Modelos de arquitetura
+            do kernel.</li>
+        <li><input type="checkbox" id="soCheckbox2" onclick="updateProgressBar('soCheckbox2')"> Estrutura de processos e
+            threads.</li>
+        <li><input type="checkbox" id="soCheckbox3" onclick="updateProgressBar('soCheckbox3')"> Escalonamento.</li>
+        <li><input type="checkbox" id="soCheckbox4" onclick="updateProgressBar('soCheckbox4')"> Gerência de
+            dispositivos.</li>
+        <li><input type="checkbox" id="soCheckbox5" onclick="updateProgressBar('soCheckbox5')"> Gerência de memória.
+        </li>
+        <li><input type="checkbox" id="soCheckbox6" onclick="updateProgressBar('soCheckbox6')"> Gerência de arquivos.
+        </li>
+        <li><input type="checkbox" id="soCheckbox7" onclick="updateProgressBar('soCheckbox7')"> Noções de Linux e
+            Windows.</li>
+        <li><input type="checkbox" id="soCheckbox8" onclick="updateProgressBar('soCheckbox8')"> Conceitos de sistemas
+            distribuídos.</li>
+        <li><input type="checkbox" id="soCheckbox9" onclick="updateProgressBar('soCheckbox9')"> Middleware.</li>
+        <li><input type="checkbox" id="soCheckbox10" onclick="updateProgressBar('soCheckbox10')"> Virtualização da
+            computação nas nuvens.</li>
+        <li><input type="checkbox" id="soCheckbox11" onclick="updateProgressBar('soCheckbox11')"> Noções básicas e
+            principais recursos de virtualização de servidores.</li>
+    </ul>
+
+    <h2>Compiladores e Autômatos</h2>
+    <ul>
+        <li><input type="checkbox" id="caCheckbox1" onclick="updateProgressBar('caCheckbox1')"> Conceito de compiladores
+            e interpretadores.</li>
+        <li><input type="checkbox" id="caCheckbox2" onclick="updateProgressBar('caCheckbox2')"> Linguagens e expressões
+            regulares.</li>
+        <li><input type="checkbox" id="caCheckbox3" onclick="updateProgressBar('caCheckbox3')"> Gramáticas livres de
+            contexto.</li>
+        <li><input type="checkbox" id="caCheckbox4" onclick="updateProgressBar('caCheckbox4')"> Parsing.</li>
+    </ul>
+
+    <h2>Computação Inteligente</h2>
+    <ul>
+        <li><input type="checkbox" id="ciCheckbox1" onclick="updateProgressBar('ciCheckbox1')"> Inteligência Artificial.
+        </li>
+        <li><input type="checkbox" id="ciCheckbox2" onclick="updateProgressBar('ciCheckbox2')"> Aprendizado de Máquina.
+        </li>
+        <li><input type="checkbox" id="ciCheckbox3" onclick="updateProgressBar('ciCheckbox3')"> Mineração de Dados.</li>
+        <li><input type="checkbox" id="ciCheckbox4" onclick="updateProgressBar('ciCheckbox4')"> Business Intelligence.
+        </li>
+        <li><input type="checkbox" id="ciCheckbox5" onclick="updateProgressBar('ciCheckbox5')"> Big Data.</li>
+    </ul>
+
+    <h2>Banco de Dados</h2>
+    <ul>
+        <li><input type="checkbox" id="bdCheckbox1" onclick="updateProgressBar('bdCheckbox1')"> Modelagem de Dados.</li>
+        <li><input type="checkbox" id="bdCheckbox2" onclick="updateProgressBar('bdCheckbox2')"> Álgebra relacional.</li>
+        <li><input type="checkbox" id="bdCheckbox3" onclick="updateProgressBar('bdCheckbox3')"> Normalização.</li>
+        <li><input type="checkbox" id="bdCheckbox4" onclick="updateProgressBar('bdCheckbox4')"> Sistemas de
+            gerenciamento de banco de dados.</li>
+        <li><input type="checkbox" id="bdCheckbox5" onclick="updateProgressBar('bdCheckbox5')"> Projeto de banco de
+            dados.</li>
+        <li><input type="checkbox" id="bdCheckbox6" onclick="updateProgressBar('bdCheckbox6')"> Linguagem SQL.</li>
+        <li><input type="checkbox" id="bdCheckbox7" onclick="updateProgressBar('bdCheckbox7')"> Procedures.</li>
+        <li><input type="checkbox" id="bdCheckbox8" onclick="updateProgressBar('bdCheckbox8')"> Triggers.</li>
+        <li><input type="checkbox" id="bdCheckbox9" onclick="updateProgressBar('bdCheckbox9')"> Administração de banco
+            de dados.</li>
+        <li><input type="checkbox" id="bdCheckbox10" onclick="updateProgressBar('bdCheckbox10')"> Banco de dados não
+            relacionais.</li>
+    </ul>
+
+    <h2>Segurança da Informação</h2>
+    <ul>
+        <li><input type="checkbox" id="siCheckbox1" onclick="updateProgressBar('siCheckbox1')"> Tipos de backup.</li>
+        <li><input type="checkbox" id="siCheckbox2" onclick="updateProgressBar('siCheckbox2')"> Firewall.</li>
+        <li><input type="checkbox" id="siCheckbox3" onclick="updateProgressBar('siCheckbox3')"> Conceitos básicos de
+            VPN.</li>
+        <li><input type="checkbox" id="siCheckbox4" onclick="updateProgressBar('siCheckbox4')"> Certificação digital e
+            criptografia.</li>
+        <li><input type="checkbox" id="siCheckbox5" onclick="updateProgressBar('siCheckbox5')"> Segurança de redes.</li>
+        <li><input type="checkbox" id="siCheckbox6" onclick="updateProgressBar('siCheckbox6')"> Sistemas de detecção de
+            intrusão.</li>
+        <li><input type="checkbox" id="siCheckbox7" onclick="updateProgressBar('siCheckbox7')"> Sistemas de prevenção de
+            intrusão.</li>
+        <li><input type="checkbox" id="siCheckbox8" onclick="updateProgressBar('siCheckbox8')"> Métodos de autenticação.
+        </li>
+    </ul>
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Recuperar os estados marcados dos checkboxes armazenados no localStorage
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(function (checkbox) {
+                var checkboxId = checkbox.id;
+                var isChecked = localStorage.getItem(checkboxId) === "true";
+                checkbox.checked = isChecked;
+            });
+
+            // Atualizar a barra de progresso inicialmente
+            updateProgressBar();
+        });
+
+        function updateProgressBar(checkboxId) {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            var checkedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            var progress = (checkedCheckboxes.length / checkboxes.length) * 100;
+            document.getElementById('progress').style.width = progress + '%';
+            document.getElementById('progress-text').textContent = progress.toFixed(2) + '%';
+
+
+            // Armazenar o estado marcado no localStorage
+            if (checkboxId) {
+                var checkbox = document.getElementById(checkboxId);
+                localStorage.setItem(checkboxId, checkbox.checked);
+            }
+        }
+    </script>
+</body>
+
+</html>

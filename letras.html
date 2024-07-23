@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo IFS 2024</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+</head>
+
+<body>
+    <div id="progressbar">
+        <div id="progress">
+            <div id="progress-text">0%</div>
+        </div>
+    </div>
+
+    <ul>
+        <li class="btinicio">
+            <img src="img/casa.png" alt="início" width="30" height="30">
+            <h3><a href="index.html"> Início </a></h3>
+        </li>
+    </ul>
+
+
+    <h1>Conteúdos Específicos de Letras Português</h1>
+    <br>
+
+    <div class="conteudo">
+
+
+        <ul>
+            <li><input type="checkbox" id="linguisticaCheckbox1" onclick="updateProgressBar('linguisticaCheckbox1')">
+                Teorias e correntes da linguística (do final do século XIX à contemporaneidade).</li>
+        </ul>
+
+
+        <ul>
+            <li><input type="checkbox" id="historiaPortuguesaCheckbox1"
+                    onclick="updateProgressBar('historiaPortuguesaCheckbox1')"> História da língua portuguesa e do
+                português brasileiro.</li>
+        </ul>
+
+
+        <ul>
+            <li><input type="checkbox" id="concepcoesLinguaCheckbox1"
+                    onclick="updateProgressBar('concepcoesLinguaCheckbox1')"> Concepções de língua, linguagem, sujeito,
+                texto e sentido.</li>
+        </ul>
+
+
+        <ul>
+            <li><input type="checkbox" id="estruturaCheckbox1" onclick="updateProgressBar('estruturaCheckbox1')">
+                Estrutura, coesão, coerência e progressão textuais.</li>
+        </ul>
+
+
+        <ul>
+            <li><input type="checkbox" id="generosCheckbox1" onclick="updateProgressBar('generosCheckbox1')"> Gêneros
+                discursivos e gêneros textuais: perspectivas do processo de ensino e aprendizagem da Língua Portuguesa.
+            </li>
+        </ul>
+
+
+        <ul>
+            <li><input type="checkbox" id="morfossintaxeCheckbox1"
+                    onclick="updateProgressBar('morfossintaxeCheckbox1')"> Morfossintaxe e morfossemântica da/na língua
+                portuguesa.</li>
+        </ul>
+
+
+        <ul>
+            <li><input type="checkbox" id="interfaceCheckbox1" onclick="updateProgressBar('interfaceCheckbox1')">
+                Interface semântica/pragmática, produção e efeitos de sentido.</li>
+        </ul>
+
+
+        <ul>
+            <li><input type="checkbox" id="variacaoLinguisticaCheckbox1"
+                    onclick="updateProgressBar('variacaoLinguisticaCheckbox1')"> Variação sonora, lexical e
+                morfossintática e mudança linguística do/no português brasileiro.</li>
+        </ul>
+
+
+        <ul>
+            <li><input type="checkbox" id="ensinoLiterarioCheckbox1"
+                    onclick="updateProgressBar('ensinoLiterarioCheckbox1')"> Concepções de ensino das formas literárias:
+                romance, poema e texto dramático.</li>
+        </ul>
+
+
+        <ul>
+            <li><input type="checkbox" id="portuguesLiteraturaCheckbox1"
+                    onclick="updateProgressBar('portuguesLiteraturaCheckbox1')"> Língua Portuguesa e Literatura
+                Brasileira: possibilidades de projetos integradores para a EPT.</li>
+        </ul>
+
+
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Recuperar os estados marcados dos checkboxes armazenados no localStorage
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(function (checkbox) {
+                var checkboxId = checkbox.id;
+                var isChecked = localStorage.getItem(checkboxId) === "true";
+                checkbox.checked = isChecked;
+            });
+
+            // Atualizar a barra de progresso inicialmente
+            updateProgressBar();
+        });
+
+        function updateProgressBar(checkboxId) {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            var checkedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            var progress = (checkedCheckboxes.length / checkboxes.length) * 100;
+            document.getElementById('progress').style.width = progress + '%';
+            document.getElementById('progress-text').textContent = progress.toFixed(2) + '%';
+
+
+            // Armazenar o estado marcado no localStorage
+            if (checkboxId) {
+                var checkbox = document.getElementById(checkboxId);
+                localStorage.setItem(checkboxId, checkbox.checked);
+            }
+        }
+    </script>
+</body>
+
+</html>

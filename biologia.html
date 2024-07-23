@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo IFS 2024</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+</head>
+
+<body>
+    <div id="progressbar">
+        <div id="progress">
+            <div id="progress-text">0%</div>
+        </div>
+    </div>
+
+    <ul>
+        <li class="btinicio">
+            <img src="img/casa.png" alt="início" width="30" height="30">
+            <h3><a href="index.html"> Início </a></h3>
+        </li>
+    </ul>
+
+
+    <h1>Conteúdos Específicos de Biologia</h1>
+
+
+    <h2>Bactérias</h2>
+    <ul>
+        <li><input type="checkbox" id="bacteriasCheckbox1" onclick="updateProgressBar('bacteriasCheckbox1')"> Anatomia,
+            fisiologia e sistemática de bactérias.</li>
+        <li><input type="checkbox" id="bacteriasCheckbox2" onclick="updateProgressBar('bacteriasCheckbox2')"> Métodos de
+            estudos, formas de cultivo e análises desses microorganismos.</li>
+    </ul>
+
+    <h2>Protoctistas</h2>
+    <ul>
+        <li><input type="checkbox" id="protoctistasCheckbox1" onclick="updateProgressBar('protoctistasCheckbox1')">
+            Anatomia, fisiologia e sistemática dos protoctistas.</li>
+        <li><input type="checkbox" id="protoctistasCheckbox2" onclick="updateProgressBar('protoctistasCheckbox2')">
+            Métodos de estudos, formas de cultivo e análises desses organismos.</li>
+    </ul>
+
+    <h2>Fungos</h2>
+    <ul>
+        <li><input type="checkbox" id="fungosCheckbox1" onclick="updateProgressBar('fungosCheckbox1')"> Anatomia,
+            fisiologia e sistemática de fungos (micro e macro).</li>
+        <li><input type="checkbox" id="fungosCheckbox2" onclick="updateProgressBar('fungosCheckbox2')"> Métodos de
+            estudos, formas de cultivo e análises desses organismos.</li>
+    </ul>
+
+    <h2>Tecidos Vegetais</h2>
+    <ul>
+        <li><input type="checkbox" id="tecidosVegetaisCheckbox1"
+                onclick="updateProgressBar('tecidosVegetaisCheckbox1')"> Classificação, organização e estudo dos
+            principais tecidos vegetais.</li>
+        <li><input type="checkbox" id="tecidosVegetaisCheckbox2"
+                onclick="updateProgressBar('tecidosVegetaisCheckbox2')"> Métodos de estudos e técnicas histológicas
+            voltadas para histologia vegetal.</li>
+    </ul>
+
+    <h2>Briófitas e Pteridófitas</h2>
+    <ul>
+        <li><input type="checkbox" id="brioPteridofitasCheckbox1"
+                onclick="updateProgressBar('brioPteridofitasCheckbox1')"> Anatomia, sistemática e filogenia das
+            briófitas e pteridófitas. </li>
+        <li><input type="checkbox" id="brioPteridofitasCheckbox2"
+                onclick="updateProgressBar('brioPteridofitasCheckbox2')"> Métodos de estudos, técnica de herborização e
+            identificação de táxons.</li>
+    </ul>
+
+    <h2>Gimnospermas</h2>
+    <ul>
+        <li><input type="checkbox" id="gimnospermasCheckbox1" onclick="updateProgressBar('gimnospermasCheckbox1')">
+            Anatomia, sistemática e filogenia das gimnospermas.</li>
+        <li><input type="checkbox" id="gimnospermasCheckbox2" onclick="updateProgressBar('gimnospermasCheckbox2')">
+            Métodos de estudos, técnica de herborização e identificação de táxons.</li>
+    </ul>
+
+    <h2>Angiospermas</h2>
+    <ul>
+        <li><input type="checkbox" id="angiospermasCheckbox1" onclick="updateProgressBar('angiospermasCheckbox1')">
+            Anatomia, sistemática e filogenia das angiospermas.</li>
+        <li><input type="checkbox" id="angiospermasCheckbox2" onclick="updateProgressBar('angiospermasCheckbox2')">
+            Métodos de estudos, técnica de herborização e identificação de táxons.</li>
+    </ul>
+
+    <h2>Tecidos Animais</h2>
+    <ul>
+        <li><input type="checkbox" id="tecidosAnimaisCheckbox1" onclick="updateProgressBar('tecidosAnimaisCheckbox1')">
+            Classificação, organização e estudo dos principais tecidos animais.</li>
+        <li><input type="checkbox" id="tecidosAnimaisCheckbox2" onclick="updateProgressBar('tecidosAnimaisCheckbox2')">
+            Métodos de estudos e técnicas histológicas voltadas para histologia animal.</li>
+    </ul>
+
+    <h2>Invertebrados</h2>
+    <ul>
+        <li><input type="checkbox" id="invertebradosCheckbox1" onclick="updateProgressBar('invertebradosCheckbox1')">
+            Anatomia, sistemática e filogenia dos invertebrados.</li>
+        <li><input type="checkbox" id="invertebradosCheckbox2" onclick="updateProgressBar('invertebradosCheckbox2')">
+            Métodos de estudos, técnicas de coleta e conservação desses organismos.</li>
+    </ul>
+
+    <h2>Cordados</h2>
+    <ul>
+        <li><input type="checkbox" id="cordadosCheckbox1" onclick="updateProgressBar('cordadosCheckbox1')"> Anatomia,
+            sistemática e filogenia dos cordados.</li>
+        <li><input type="checkbox" id="cordadosCheckbox2" onclick="updateProgressBar('cordadosCheckbox2')"> Métodos de
+            estudos, técnicas de coleta e conservação desses organismos.</li>
+    </ul>
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Recuperar os estados marcados dos checkboxes armazenados no localStorage
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(function (checkbox) {
+                var checkboxId = checkbox.id;
+                var isChecked = localStorage.getItem(checkboxId) === "true";
+                checkbox.checked = isChecked;
+            });
+
+            // Atualizar a barra de progresso inicialmente
+            updateProgressBar();
+        });
+
+        function updateProgressBar(checkboxId) {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            var checkedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            var progress = (checkedCheckboxes.length / checkboxes.length) * 100;
+            document.getElementById('progress').style.width = progress + '%';
+            document.getElementById('progress-text').textContent = progress.toFixed(2) + '%';
+
+
+            // Armazenar o estado marcado no localStorage
+            if (checkboxId) {
+                var checkbox = document.getElementById(checkboxId);
+                localStorage.setItem(checkboxId, checkbox.checked);
+            }
+        }
+    </script>
+</body>
+
+</html>

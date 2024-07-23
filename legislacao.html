@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legislação e Educação</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+</head>
+
+<body>
+    <div id="progressbar">
+        <div id="progress">
+            <div id="progress-text">0%</div>
+        </div>
+    </div>
+
+    <div id="container">
+
+        <ul>
+            <li class="btinicio">
+                <img src="img/casa.png" alt="início" width="30" height="30">
+                <h3><a href="index.html"> Início </a></h3>
+            </li>
+        </ul>
+        <div id="legislacao">
+            <ul>
+                <li><input type="checkbox" id="eticaCheckbox01" onclick="updateProgressBar('eticaCheckbox01')">
+                    1. <b>Ética e função pública.</b>
+                </li>
+                <li><input type="checkbox" id="eticaCheckbox1" onclick="updateProgressBar('eticaCheckbox1')">
+                    2. <b>Lei nº 8.112/1990</b>
+                    (Regime Jurídico dos Servidores Públicos Civis da União, das Autarquias
+                    e das Fundações Públicas Federais).
+                </li>
+                <li><input type="checkbox" id="eticaCheckbox2" onclick="updateProgressBar('eticaCheckbox2')">
+                    3. <b>Ética no Setor Público</b> (Código de Ética do Servidor Público - Decreto Federal nº
+                    1.171/1994).
+                </li>
+                <li><input type="checkbox" id="eticaCheckbox3" onclick="updateProgressBar('eticaCheckbox3')">
+                    4. <b>Lei de Acesso à Informação</b> (Lei nº 12.527/2011) e suas alterações.
+                </li>
+                <li><input type="checkbox" id="eticaCheckbox4" onclick="updateProgressBar('eticaCheckbox4')">
+                    5. <b>Decreto nº 7.724/2012</b> e suas alterações.
+                </li>
+                <li><input type="checkbox" id="eticaCheckbox5" onclick="updateProgressBar('eticaCheckbox5')">
+                    6. <b>Decreto nº 9.830/2019</b> e suas alterações.
+                </li>
+            </ul>
+
+
+            <ul>
+                <li><input type="checkbox" id="eticaSubCheckbox01" onclick="updateProgressBar('eticaSubCheckbox01')">
+                    7. <b>Direito Constitucional:</b></li>
+                <li><input type="checkbox" id="eticaSubCheckbox1" onclick="updateProgressBar('eticaSubCheckbox1')">
+                    - Direitos e garantias fundamentais.
+                </li>
+                <li><input type="checkbox" id="eticaSubCheckbox2" onclick="updateProgressBar('eticaSubCheckbox2')">
+                    - Direitos e deveres individuais e coletivos.
+                </li>
+                <li><input type="checkbox" id="eticaSubCheckbox3" onclick="updateProgressBar('eticaSubCheckbox3')">
+                    - Direito à vida, à liberdade, à igualdade, à segurança e à propriedade.
+                </li>
+                <li><input type="checkbox" id="eticaCheckbox9" onclick="updateProgressBar('eticaCheckbox9')">
+                    - Direitos sociais.
+                </li>
+                <li><input type="checkbox" id="eticaCheckbox10" onclick="updateProgressBar('eticaCheckbox10')">
+                    - Direitos políticos.
+                </li>
+            </ul>
+
+            <ul>
+                <li><input type="checkbox" id="eticaCheckbox11" onclick="updateProgressBar('eticaCheckbox11')">
+                    8. <b>Organização e estrutura do Estado.</b>
+                </li>
+                <li><input type="checkbox" id="eticaCheckbox12" onclick="updateProgressBar('eticaCheckbox12')">
+                    9. <b>Poder constituinte.</b>
+                </li>
+            </ul>
+
+            <ul>
+                <li><input type="checkbox" id="eticaCheckbox13" onclick="updateProgressBar('eticaCheckbox13')">
+
+                    10. <b>Princípios Constitucionais de Direito Administrativo e Fundamentos da Administração
+                        Pública:</b>
+
+                <li><input type="checkbox" id="eticaSubCheckbox4" onclick="updateProgressBar('eticaSubCheckbox4')">
+                    - Legalidade.
+                </li>
+                <li><input type="checkbox" id="eticaSubCheckbox5" onclick="updateProgressBar('eticaSubCheckbox5')">
+                    - Impessoalidade.
+                </li>
+                <li><input type="checkbox" id="eticaSubCheckbox6" onclick="updateProgressBar('eticaSubCheckbox6')">
+                    - Moralidade.
+                </li>
+                <li><input type="checkbox" id="eticaSubCheckbox7" onclick="updateProgressBar('eticaSubCheckbox7')">
+                    - Publicidade.
+                </li>
+                <li><input type="checkbox" id="eticaSubCheckbox8" onclick="updateProgressBar('eticaSubCheckbox8')">
+                    - Eficiência.
+                </li>
+            </ul>
+            </li>
+            </ul>
+
+
+            <ul>
+                <li><input type="checkbox" id="eticaSubCheckbox09" onclick="updateProgressBar('eticaSubCheckbox09')">
+                    11. <b>Atos Administrativos:</b>
+                </li>
+                <li><input type="checkbox" id="eticaSubCheckbox9" onclick="updateProgressBar('eticaSubCheckbox9')">
+                    - Elementos e atributos.
+                </li>
+                <li><input type="checkbox" id="eticaSubCheckbox10" onclick="updateProgressBar('eticaSubCheckbox10')">
+                    - Classificações e espécies dos atos administrativos.
+                </li>
+                <li><input type="checkbox" id="eticaSubCheckbox11" onclick="updateProgressBar('eticaSubCheckbox11')">
+                    - Anulação, revogação e convalidação dos atos administrativos.
+                </li>
+                <li><input type="checkbox" id="eticaCheckbox15" onclick="updateProgressBar('eticaCheckbox15')">
+                    - Competência (avocação e delegação).
+                </li>
+            </ul>
+
+            <ul>
+                <li><input type="checkbox" id="eticaCheckbox16" onclick="updateProgressBar('eticaCheckbox16')">
+                    12. <b>Processos Administrativos</b> (Lei nº 9.784/1999 e suas alterações).
+                </li>
+                <li><input type="checkbox" id="eticaCheckbox17" onclick="updateProgressBar('eticaCheckbox17')">
+                    13. <b>Improbidade Administrativa</b> (Lei nº 8.429/1992 e suas alterações).
+                </li>
+            </ul>
+
+
+            <ul>
+                <li><input type="checkbox" id="eticaSubCheckbox12" onclick="updateProgressBar('eticaSubCheckbox012')">
+                    14. <b>Agentes públicos:</b>
+                </li>
+                <li><input type="checkbox" id="eticaSubCheckbox12" onclick="updateProgressBar('eticaSubCheckbox12')">
+                    - Agentes políticos.
+                </li>
+                <li><input type="checkbox" id="eticaSubCheckbox13" onclick="updateProgressBar('eticaSubCheckbox13')">
+                    - Servidores públicos.
+                </li>
+            </ul>
+
+            <ul>
+                <li><input type="checkbox" id="eticaCheckbox19" onclick="updateProgressBar('eticaCheckbox19')">
+                    15. <b>Lei nº 11.892/2008</b> &nbsp; e suas alterações.
+                </li>
+                <li><input type="checkbox" id="eticaCheckbox20" onclick="updateProgressBar('eticaCheckbox20')">
+                    16. <b>Lei nº 12.772/2012</b> &nbsp; e suas alterações.
+                </li>
+                <li><input type="checkbox" id="eticaCheckbox21" onclick="updateProgressBar('eticaCheckbox21')">
+                    17. <b>Lei de Diretrizes e Bases da Educação</b>&nbsp; (Lei nº 9.394/1996).
+                </li>
+                <li><input type="checkbox" id="eticaCheckbox22" onclick="updateProgressBar('eticaCheckbox22')">
+                    18. <b>Plano Nacional da Educação (PNE).</b>
+                </li>
+            </ul>
+
+            <ul>
+                <li><input type="checkbox" id="eticaCheckbox23" onclick="updateProgressBar('eticaCheckbox23')">
+                    19. <b>Resolução CNE/CP nº 01/2021:</b>&nbsp; Define Diretrizes Curriculares Nacionais para a
+                    Educação
+                    Profissional Técnica de Nível Médio.
+                </li>
+                <li><input type="checkbox" id="eticaCheckbox24" onclick="updateProgressBar('eticaCheckbox24')">
+                    20. <b>PPPI/PDI IFS.</b>
+                </li>
+                <li><input type="checkbox" id="eticaCheckbox25" onclick="updateProgressBar('eticaCheckbox25')">
+                    21. <b>Governança Pública</b> (Decreto nº 9.203/2017).
+                </li>
+                <li><input type="checkbox" id="eticaCheckbox26" onclick="updateProgressBar('eticaCheckbox26')">
+                    22. <b>Políticas Públicas.</b>
+                </li>
+            </ul>
+
+        </div>
+
+
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Recuperar os estados marcados dos checkboxes armazenados no localStorage
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(function (checkbox) {
+                var checkboxId = checkbox.id;
+                var isChecked = localStorage.getItem(checkboxId) === "true";
+                checkbox.checked = isChecked;
+            });
+
+            // Atualizar a barra de progresso inicialmente
+            updateProgressBar();
+        });
+
+        function updateProgressBar(checkboxId) {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            var checkedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            var progress = (checkedCheckboxes.length / checkboxes.length) * 100;
+            document.getElementById('progress').style.width = progress + '%';
+            document.getElementById('progress-text').textContent = progress.toFixed(2) + '%';
+
+            // Armazenar o estado marcado no localStorage
+            if (checkboxId) {
+                var checkbox = document.getElementById(checkboxId);
+                localStorage.setItem(checkboxId, checkbox.checked);
+            }
+        }
+    </script>
+</body>
+
+</html>
